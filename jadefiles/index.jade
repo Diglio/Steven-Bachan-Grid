@@ -1,0 +1,44 @@
+mixin nav-content()
+  ul
+    li: a(href='#gallery').active Gallery
+    li: a(href='#about') About
+    li: a(href='#contact') Contact
+
+
+doctype html
+
+html
+  title The Art of Steven Bachan
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='main.css')
+  
+  header
+    .logo Placeholder
+    nav.site-nav
+      +nav-content
+
+  .home-section
+    section.gallery
+      .image1.imageTemp
+        p Image Caption
+      .image2.imageTemp
+        p Image Caption
+      .image3.imageTemp
+        p Image Caption
+      .image4.imageTemp
+        p Image Caption
+      .image5.imageTemp
+        p Image Caption
+      .image6.imageTemp
+        p Image Caption
+      .image7.imageTemp
+        p Image Caption
+      .image8.imageTemp
+        p Image Caption 
+      
+    section.footer  
+      p All images contained herein are © Steven Bachan and may not be used partially or entirely without written permission. 
+
+  script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+  script(src="../assets/js/functions-min.js")
