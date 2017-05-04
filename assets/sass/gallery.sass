@@ -4,7 +4,7 @@ section.gallery
   text-align: center
   display: grid
   grid-template-columns: repeat(4, 150px)
-  grid-template-rows: repeat(2, 250px)
+  grid-auto-rows: 250px
   justify-content: center
   justify-items: center
   align-content: center
@@ -64,3 +64,19 @@ section.gallery
   .image8
     background:
       image: url(assets/img/orc_search_party_web.jpg)
+  
+
+@media screen and (min-width: 280px) and (max-width: 419px)
+  section.gallery
+    grid-template-columns: 150px
+    grid-auto-rows: 250px
+
+@media screen and (min-width: 420px) and (max-width: 624px)
+  section.gallery
+    grid-template-columns: 150px 150px
+    grid-auto-rows: 250px
+
+@media screen and (min-width: 625px) and (max-width: 900px)
+  section.gallery
+    grid-template-columns: repeat(3, 150px)
+    grid-auto-rows: 250px

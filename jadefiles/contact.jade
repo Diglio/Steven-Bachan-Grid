@@ -1,0 +1,31 @@
+mixin nav-content()
+  ul
+    li: a(href='../index.html') Gallery
+    li: a(href='../about.html') About
+    li.active: a(href='../contact.html') Contact
+
+
+doctype html
+
+html
+  title The Art of Steven Bachan
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1')
+  link(rel='stylesheet', href='main.css')
+  
+  header
+    .logo Placeholder
+    nav.site-nav
+      +nav-content
+
+  .home-section
+    section.contact
+      h3 Email:
+      a(href="mailto:stevenbachan@gmail.com") stevenbachan@gmail.com
+      h3 Phone:   
+      p c: 718-440-7172
+      p h: 718-848-2379
+        
+    section.footer
+      p All images contained herein are © Steven Bachan and may not be used partially or entirely without written permission. 
+    
